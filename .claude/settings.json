@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/ikomiki/workspace/phaser-rpg/node_modules/.bin/eslint --fix ${file_path}"
+          },
+          {
+            "type": "command",
+            "command": "/Users/ikomiki/workspace/phaser-rpg/node_modules/.bin/eslint ${file_path} || [ $? -eq 0 ]"
+          }
+        ]
+      }
+    ]
+  }
+}
