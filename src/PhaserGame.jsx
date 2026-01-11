@@ -1,7 +1,7 @@
 import { forwardRef, useLayoutEffect, useRef } from 'react';
 import StartGame from './game/main';
 
-export const PhaserGame = forwardRef(function PhaserGame (props, ref)
+export const PhaserGame = forwardRef(function PhaserGame (ref)
 {
     const game = useRef();
 
